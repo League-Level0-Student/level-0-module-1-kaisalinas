@@ -1,24 +1,15 @@
-//    Copyright (c) The League of Amazing Programmers 2013-2017
-//    Level 0
-
-
+import javax.swing.JOptionPane;
 
 public class TheRiddler {
-
-	public static void main(String[] args) {
-
-		// 1. Make a variable to hold the score
-
-		// 3. Ask the user a riddle. Here are some ideas: bit.ly/some-riddles
-
-		// 4. If they got the answer right, pop up "correct!" and increase the score by one
-
-		// 5. Otherwise, say "wrong" and tell them the answer
-
-		// 6. Add some more riddles
-
-		// 2. Make a pop up to show the score.
-		
+public static void main(String[] args) {
+	int score = 0; 
+	String pizza = JOptionPane.showInputDialog("There is a tiny ship on a big ship. You are on the tiny ship and there are 40 people. How come you see 44 heads.");
+	if (pizza.equals("They see 40 foreheads")) {
+		JOptionPane.showMessageDialog(null, "correct!!!");
+		score = score + 1;
 	}
+	else {
+		JOptionPane.showMessageDialog(null, "Wrong!!!! The answer is they see 40 foreheads");
 }
-
+}
+}
